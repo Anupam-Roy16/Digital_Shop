@@ -1,3 +1,4 @@
+import { ToastContainer } from 'react-toastify';
 import { Suspense} from "react";
 import "./App.css";
 import Banner from "./Component/Banner/Banner";
@@ -28,6 +29,7 @@ function App() {
     <Step></Step>
     <Price></Price>
     <Footer></Footer>
+     <ToastContainer />
     
     </>
   );

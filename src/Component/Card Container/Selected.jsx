@@ -1,9 +1,9 @@
-// import React from "react";
-
+import { toast } from 'react-toastify';
 const Selected = ({ selectedCard, price,setPrice, setSelectedCard }) => {
   const handle_checkout_button = () => {
     console.log("selectedCard");
     setSelectedCard([]);
+    toast('checked out');
   };
   const handle_remove_button = (card) => {
     
@@ -11,7 +11,9 @@ const Selected = ({ selectedCard, price,setPrice, setSelectedCard }) => {
       (tmp) => tmp.id !== card.id
     );
     setSelectedCard((newSelectedCard));
-    setPrice(price-card.price)
+    setPrice(price-card.price);
+    toast('removed from cart');
+  
   };
   return (
     <div className="mt-9 container mx-auto  min-h-60">

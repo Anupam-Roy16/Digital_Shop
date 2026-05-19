@@ -1,8 +1,11 @@
+import { toast } from "react-toastify";
+
 const Card = ({ product ,setSelectedCard , selectedCard, price, setPrice}) => {
   // console.log(product);
   const handlebuynow = () => {
 setSelectedCard([...selectedCard,product])
 setPrice(price+product.price)
+toast('added to cart');
   };
   return (
     <div className="shadow-2xl p-3">
