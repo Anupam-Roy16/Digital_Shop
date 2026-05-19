@@ -11,7 +11,7 @@ const Price = () => {
           </p>
         </div>
 
-        <div className="container mx-auto grid grid-cols-3 gap-3 mt-9">
+        <div className="container mx-auto grid grid-cols-3 gap-3 mt-9 max-[647px]:grid-cols-2 max-[470px]:grid-cols-1">
           <div className="shadow-2xl p-3">
             <div className="flex justify-between items-center mb-2">
               <div className="max-w-5">
@@ -187,7 +187,7 @@ const Price = () => {
             </button>
           </div>
 
-          <div className="shadow-2xl p-3">
+          <div className="shadow-2xl p-3 max-[647px]:col-span-2 max-[647px]:text-center max-[470px]:col-span-1">
             <div className="flex justify-between items-center mb-2">
               <div className="max-w-5">
                 <img src="" alt="" />
@@ -270,7 +270,7 @@ const Price = () => {
                 <span>1 Project Per Month</span>
               </li>
             </ul>
-            <button className="btn btn-primary w-full rounded-4xl mt-5">
+            <button className="btn btn-primary w-full max-[647px]:max-w-60 rounded-4xl mt-5">
               Get Started Free
             </button>
           </div>

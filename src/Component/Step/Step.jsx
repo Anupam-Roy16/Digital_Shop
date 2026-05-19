@@ -9,7 +9,7 @@ const Step = () => {
           Start using premium digital tools in minutes, not hours.
         </p>
       </div>
-      <div className="container mx-auto grid grid-cols-3 gap-6 mt-7">
+      <div className="container mx-auto grid grid-cols-3 gap-6 mt-7 max-[647px]:grid-cols-2 max-[470px]:grid-cols-1">
         <div className="text-center p-5 bg-base-300 shadow-2xs">
           <div className="bg-violet-800 flex justify-center pt-1 w-9 h-9 rounded-full ml-auto ">
             <p className="text-white">01</p>
@@ -40,7 +40,7 @@ const Step = () => {
             Sign up for free in seconds. No credit card required to get started.
           </p>
         </div>
-        <div className="text-center p-5 bg-base-300 shadow-2xs">
+        <div className="text-center p-5 bg-base-300 shadow-2xs max-[647px]:col-span-2 max-[470px]:col-span-1">
           <div className="bg-violet-800 flex justify-center pt-1 w-9 h-9 rounded-full ml-auto ">
             <p className="text-white">01</p>
           </div>

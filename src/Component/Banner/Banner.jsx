@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <div className="manrope min-h-[60vh] flex  items-center justify-center gap-16 max-[787px]:flex-col max-[787px]:gap-2">
       {/* banner desc */}
-      <div className=" p-9 max-w-svh border max-[787px]:flex max-[787px]:flex-col max-[787px]:items-center">
+      <div className=" p-9 max-w-svh max-[787px]:flex max-[787px]:flex-col max-[787px]:items-center">
         <div className="badge badge-soft bg-blue-100 text-blue-900 mb-2  ">
           <div className="h-2 w-2 bg-blue-500 rounded-full text-sm"></div>
           <p className="max-[323px]:text-sm">New: AI-Powered Tools Available</p>
@@ -31,7 +31,7 @@ const Banner = () => {
       </div>
 
       {/* banner image */}
-      <div className="max-w-sm border">
+      <div className="max-w-sm">
         <img src={abc} alt="" />
       </div>
     </div>
