@@ -36,7 +36,7 @@ const Card_Container = ({ promise }) => {
       {/* as selection show card */}
 
       {selecetedtype === "Products" ? (
-        <div className="container mx-auto grid grid-cols-3 gap-3 mt-9">
+        <div className="container mx-auto grid grid-cols-3 gap-3 mt-9 max-[647px]:grid-cols-2 max-[470px]:grid-cols-1">
           {data.map((product) => {
             return <Card product={product} selectedCard={selectedCard} setSelectedCard={setSelectedCard} price={price} setPrice={setPrice}> </Card>;
           })}

@@ -2,18 +2,19 @@
 const Navbar = () => {
   
   return (
-    <div className="container mx-auto flex justify-between navbar bg-base-100 shadow-sm mb-9">
-      <div className="">
-        <a className="text-3xl font-bold text-violet-950 ">Digitools</a>
+    <div className="max-w-[90%] mx-auto flex justify-between navbar bg-base-100 shadow-sm mb-9 max-[660px]:grid max-[660px]:grid-cols-2 max-[660px]:gap-4">
+      
+      <div>
+        <a className=" font-bold text-violet-950 sm:text-xl md:text-2xl lg:text-3xl">Digitools</a>
       </div>
-      <div className="flex justify-between gap-14">
+      <div className="flex justify-between gap-14 max-[391px]:row-span-2 max-[391px]:grid-cols-1 max-[813px]:grid-cols-2 max-[813px]:gap-1 max-[994px]:grid max-[994px]:grid-cols-3 max-[994px]:gap-6 ">
         <p>Products</p>
         <p>Features</p>
         <p>Pricing</p>
         <p>Testimonials</p>
         <p>FAQ</p>
       </div>
-      <div className="flex items-center justify-between gap-5">
+      <div className="flex items-center justify-between gap-5 max-[391px]:col-span-1 max-[391px]:flex-col max-[391px]:gap-2  max-[660px]:col-span-2">
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
             <div className="indicator">
@@ -38,7 +39,7 @@ const Navbar = () => {
          
         </div>
         <p>Login</p>
-        <button className="btn btn-primary rounded-3xl text-xl">Get Started</button>
+        <button className="btn btn-xs btn-primary rounded-3xl sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl">Get Started</button>
       </div>
     </div>
   );

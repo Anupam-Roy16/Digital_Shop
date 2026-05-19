@@ -25,9 +25,9 @@ const Selected = ({ selectedCard, price,setPrice, setSelectedCard }) => {
           <p>Your cart is empty</p>
         </div>
       ) : (
-        <div>
+        <div className="border p-5">
           {selectedCard.map((card) => (
-            <div className="flex justify-between items-center border mt-5 bg-base-300">
+            <div className="flex justify-between items-center rounded-2xl mt-5 bg-base-300 px-5 max-[373px]:flex-col">
               <div className="flex gap-4 items-center">
                 <div className="max-w-5">
                   <img src={card.icon} alt="" />
@@ -37,7 +37,7 @@ const Selected = ({ selectedCard, price,setPrice, setSelectedCard }) => {
                   <p>{card.price}</p>
                 </div>
               </div>
-              <button onClick={()=>handle_remove_button(card)} className="btn">remove</button>
+              <button onClick={()=>handle_remove_button(card)} className="btn text-red-600">remove</button>
             </div>
           ))}
           <div className="flex justify-between mt-5">
